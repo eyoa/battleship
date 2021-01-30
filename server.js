@@ -3,9 +3,13 @@ const app = express();
 
 const PORT = 3000;
 
+app.set("view engine", "ejs");
+
 app.get("/", (req, res) => {
-  res.send('Hello~');
+  const templateVars = {};
+  res.render("index", templateVars);
 });
+
 
 app.listen(PORT, () => {
   console.log(`Server is listening on port ${PORT}`);

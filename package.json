@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "local": "./node_modules/.bin/nodemon --watch server.js"
+    "local": "./node_modules/.bin/nodemon -L server.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/eyoa/battleship#readme",
   "dependencies": {
+    "ejs": "^3.1.5",
     "express": "^4.17.1"
   },
   "devDependencies": {
